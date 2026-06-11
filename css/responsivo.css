@@ -1,0 +1,248 @@
+/* responsividade do site*/
+
+/* todo o site para celular*/
+
+@media ( max-width : 480px) {
+     #inicio{
+display: flex;
+justify-content: space-around;  
+flex-direction: column;  /* alinha os itens um ao lado do outro*/
+align-items: center;  /* alinha os intens no centro*/
+padding: 10px 20px;  
+background-color: rgb(190,249,255);
+border: 9px solid rgb(190,249,255) ;
+
+    }
+
+    .Logo {
+        display: block; /*Ele cria um "bloco" independente na página.*/
+
+        height: 200px;
+        width: 280px;
+
+        margin: 0;
+    }
+
+
+/*-- Aqui é a parte dos botões para fazer a navegação pelo site--*/
+.navi {
+    display: flex;  /* ve o video que eu mandei no grupo */
+    gap: 20px;/*--Dá um espaço entre os itens --*/
+    margin-right: 10px;
+    text-align: center; /*--alinha o texto no centro --*/
+    padding: 10px; 
+}
+
+.navi li{  /* Sãp os botões*/
+     
+
+    display: none;
+}
+
+#botãowhats{ /* é o botão dp whats*/
+width                   : 50px;
+
+bottom                  : 40px;
+right                   : 20px;
+
+position                : fixed;  /* serve para ele sempre ficar na tela */
+
+background-color        : rgb(108, 255, 108);
+border                  : 4px solid white;
+border-radius           : 50px;
+
+z-index                 : 1;  /* faz com que ele fique na frente das outras imagens*/
+}
+
+
+h1{ /*- Titulos -*/
+    text-align          : center;
+    color               : #5B4243ff;
+    text-decoration     : underline;
+}
+
+h2{/*-Sub-Titulos-*/
+    text-align          : center;
+    color               : #5B4243ff;
+}
+
+p{/*-paragrafos-*/
+
+    color               : #5B4243ff;
+    font-size: 18px;
+      
+
+}
+    
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+/*- seção quem somos-*/
+ #Q{
+
+
+     margin             : 5px;
+     background-color   : #F2BBC9;
+     border             : 10px solid rgb(190, 249, 255);
+     border-radius      : 20px;
+    }
+
+    /*- esse item abaixo são da imagen da sorveteria na parte "quem somos."-*/
+
+ .imag{
+    
+      width: 100%;
+    max-width: 271px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+
+     border               : 2px solid   #77C2C1ff;
+     border-radius        : 21px;
+    
+   }
+
+
+
+ 
+
+    /*- seção Produtos-*/
+ #P{
+      margin            : 5px;
+      background-color  : #F2BBC9;
+      border            : 10px solid rgb(190, 249, 255);
+      border-radius     : 20px;
+         }
+
+ #P table, th, td{ /* Essa parte tira as bordas das imagens do carrosel*/
+
+       border         : 10px solid transparent;
+    }
+
+   #P img{
+        width: 100%;
+     max-width: 180px;
+     height: auto;
+        border: 10px solid black;
+      
+    }
+
+    
+ 
+    
+ .par1{  /* É o botão de mais produtos*/
+    color               : #5B4243ff;
+    text-align          : center;
+   
+    background-color    : rgb(190, 249, 255);
+    border              : #F2BBC9;
+    
+    border-radius       : 20px;  /* arredonda as bordas */
+
+     width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+
+
+}
+.par1:hover{
+    background-color    : rgb(210, 251, 255);
+} /*-- mudar a cor da letra ou fundo quando passar o mouse por cima --*/
+
+    
+    
+/*-seção Localização -*/
+    
+#L{
+    
+   margin               : 5px;
+   background-color     : #F2BBC9;
+   border               : 10px solid rgb(190, 249, 255);
+   border-radius        : 20px;
+    }
+      
+     
+
+    .localização a {  /*mexe no link tira a linha que fica embaixo e aumenta a fonte*/
+        text-decoration : none;
+        font-size: 18px;
+    } 
+
+.texto ,.localização { /*-- deixa os textos ao lado das imagens*/
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.texto p {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+ /* Aqui é o final da página*/
+
+
+
+    footer{
+
+ justify-content: center; /*Alinha os itens no centro do contêiner(Footer nesse caso)*/
+
+    display: flex;
+    flex-direction:column; 
+    gap: 0px;  /*espaço entre os itens*/
+
+
+    
+    }
+
+     .icone{
+         /* é igual ao que eu expliquei lá em cima*/
+      width: 40px;
+    height: 40px;
+
+  
+    
+
+    }
+
+    #logofim{
+      
+     height: auto;
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+    }
+ 
+ .fimpag{ /* mexe co os paragrafo no fim da pagina*/
+
+
+background-color: #F2BBC9;
+text-align: center;
+
+   width: 90%;
+    max-width: 300px;
+    margin: 10px auto;
+
+border-radius: 10px;
+ }
+ 
+*{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+ 
+}

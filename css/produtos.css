@@ -1,0 +1,179 @@
+  body{
+        box-sizing      : border-box;
+        margin          : 0%;
+        padding         : 0;
+        background-color: 
+        #bef9ff;
+        font-family     : 'MorningBreeze';
+        font-size       : 20px;
+
+    }
+  
+
+
+    /*  Esse font face é para importar uma fonte*/
+@font-face{font-family  : 'MorningBreeze' ;
+    src                 : url(fonte/MorningBreeze.otf) format( 'Truetype' );
+    font-weight         : normal;
+    font-style          : normal;}
+
+/*-- Aqui é a parte de cima da aba produtos --*/
+
+
+  header , p{/*--  formata a cor do texto e alinha no centro --*/
+
+text-align              : center;
+background-color        : #F2BBC9;
+color                   : #5B4243ff ;
+
+
+}
+.paragrafo{
+  white-space           : pre-line; /* pula linha quando vc pula linha dentro do codigo*/
+  font-size             : 20px;
+
+  display               : flex;
+  flex-flow             : row wrap;
+justify-content         : center;
+
+
+
+
+  
+}
+h2{
+    text-align          : center;
+background-color        : #bef9ff;
+color                   :#5B4243ff;
+
+
+}
+
+
+
+
+.Produtos2{
+display                 : flex;
+flex-flow               : row wrap;
+justify-content         : center;
+
+gap                     : 30px;
+background-color        : #fad7e3;
+
+}
+
+
+.produto2{
+    height              : 200px;
+     width              : 180px ;  
+     
+     border-radius      : 10px;
+     margin             : 10px 10px 10px 10px;
+
+    object-fit          : cover;
+    border-radius       : 10px;
+}
+
+
+
+
+p:hover{
+    transform           : rotate(10deg); /* quando passar o mouse por cima do p ele fica meio tortinho*/
+}
+
+
+
+ a{  /* É um link */
+        font-family     : MorningBreeze;
+        font-size       : 18px;
+        text-decoration : none; /* Tira a linha embaixo*/
+  }
+
+
+
+
+.sabores{
+    text-align          : left;
+    display             : flex;
+    flex-direction      : column;
+    align-items         : center;
+    gap                 : 20px;
+}
+
+.saborestitulo{
+display                 : flex;
+flex-flow               : column;
+justify-content         : center;
+
+gap                     : 30px;
+background-color        : #fad7e3;
+
+ text-align             : center;
+
+}
+
+.saboresimagem{
+  width                 : 180px;
+    height              : 200px;
+    margin              : 10px;
+
+    border-radius       : 10px;
+
+}
+
+.lista{
+    
+ display                : flex;
+    justify-content     : center;
+    gap                 : 50px;
+    margin-top          : 20px;
+
+}
+
+.lista ul{
+color: #5B4243ff;
+    padding-left        : 20px;
+}
+
+
+/* Aqui é o botão para voltar*/
+
+
+    button{
+color: #5B4243ff;
+
+background-color: #F2BBC9;
+border:#5B4243ff ;
+border-radius: 20px;
+
+
+height: 50px;
+width: 100px;
+
+font-size: 20px;
+font-family: "MorningBreeze";
+    }    
+
+    button:hover {
+        background-color: #f7d0da;
+     }
+
+
+     /* Responsividade para celular até 480 de largura */
+     /* É o site se adptando a tela do celular */
+     @media (max-width: 480px){
+
+    .lista{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lista div{
+        width: 90%;
+        padding: 15px;
+    }
+
+    .lista p{
+        margin-bottom: 10px;
+    }
+}

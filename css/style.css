@@ -1,0 +1,356 @@
+    body{
+        box-sizing      : border-box;
+        margin          : 0%;
+        padding         : 0;
+        background-color:  rgb(190, 249, 255);
+        font-family     : 'MorningBreeze';
+        font-size       : 20px;
+
+    }
+
+@font-face{font-family  : 'MorningBreeze' ;
+    src                 : url(fonte/MorningBreeze.otf) format( 'Truetype' );
+    font-weight         : normal;
+    font-style          : normal;}
+
+/*-- Aqui é a parte de cima do site 
+é aonde fica o logo e os botões -- */
+    #inicio{
+display: flex;
+justify-content: space-between;  
+flex-direction: row;  /* alinha os itens um ao lado do outro*/
+align-items: center;  /* alinha os intens no centro*/
+padding: 10px 20px;  
+background-color: rgb(190,249,255);
+border: 9px solid rgb(190,249,255) ;
+
+    }
+
+    .Logo {
+        display: block; /*Ele cria um "bloco" independente na página.*/
+
+        height: auto;
+        width: 280px;
+
+        margin: 0;
+    }
+
+
+/*-- Aqui é a parte dos botões para fazer a navegação pelo site--*/
+.navi {
+    display: flex;  /* ve o video que eu mandei no grupo */
+    gap: 20px;/*--Dá um espaço entre os itens --*/
+    margin-right: 10px;
+    text-align: center; /*--alinha o texto no centro --*/
+    padding: 10px; 
+}
+
+.navi li{  /* Sãp os botões*/
+       display: flex;
+    justify-content     : center; 
+    align-items         : center;    
+
+    background-color    : #F2BBC9;
+    border              : 2px solid #5B4243ff;
+    border-radius       : 20px;
+
+    width               : 78px;
+    height              : 40px;
+
+ list-style: none; /* Ele tira aquelas bolinhas das listas  */
+
+    font-size: 10px;
+}
+
+ .navi li:hover{  
+    background-color    : rgb(190, 249, 255);
+
+}
+   
+a, li{   /*aqui ainda é os botões*/
+        font-size       : 18px;
+        color           : #5B4243ff;
+        text-decoration: none;  }
+
+    
+  
+#botãowhats{ /* é o botão dp whats*/
+width                   : 50px;
+
+bottom                  : 40px;
+right                   : 20px;
+
+position                : fixed;  /* serve para ele sempre ficar na tela */
+
+background-color        : rgb(108, 255, 108);
+border                  : 4px solid white;
+border-radius           : 50px;
+
+z-index                 : 1;  /* faz com que ele fique na frente das outras imagens*/
+}
+
+
+h1{ /*- Titulos -*/
+    text-align          : center;
+    color               : #5B4243ff;
+    text-decoration     : underline;
+}
+
+h2{/*-Sub-Titulos-*/
+    text-align          : center;
+    color               : #5B4243ff;
+}
+
+p{/*-paragrafos-*/
+
+    color               : #5B4243ff;
+    font-size: 30px;
+      
+
+}
+    
+
+
+
+
+
+
+/*- seção quem somos-*/
+ #Q{
+
+
+     margin             : 5px;
+     background-color   : #F2BBC9;
+     border             : 10px solid rgb(190, 249, 255);
+     border-radius      : 20px;
+    }
+
+    /*- esse item abaixo são da imagen da sorveteria na parte "quem somos."-*/
+
+ .imag{
+     height             : 341px;
+     width              : 271px ;
+
+     border               : 2px solid   #77C2C1ff;
+     border-radius        : 21px;
+     margin               : -71px 30px 15px 42px;
+   }
+
+
+
+ 
+
+    /*- seção Produtos-*/
+ #P{
+      margin            : 5px;
+      background-color  : #F2BBC9;
+      border            : 10px solid rgb(190, 249, 255);
+      border-radius     : 20px;
+         }
+
+ #P table, th, td{ /* Essa parte tira as bordas das imagens do carrosel*/
+
+       border         : 10px solid transparent;
+    }
+
+   #P img{
+        height: 200px;
+        width:180px ;
+    
+      
+    }
+
+    
+ 
+    
+ .par1{  /* É o botão de mais produtos*/
+    color               : #5B4243ff;
+    text-align          : center;
+   
+    background-color    : rgb(190, 249, 255);
+    border              : #F2BBC9;
+    
+    border-radius       : 20px;  /* arredonda as bordas */
+   margin               : 20px 90px 10px 90px;
+
+
+}
+.par1:hover{
+    background-color    : rgb(210, 251, 255);
+} /*-- mudar a cor da letra ou fundo quando passar o mouse por cima --*/
+
+    
+    
+/*-seção Localização -*/
+    
+#L{
+    
+   margin               : 5px;
+   background-color     : #F2BBC9;
+   border               : 10px solid rgb(190, 249, 255);
+   border-radius        : 20px;
+    }
+      
+    .localização { /* Tambem alinha o texto ao lado da imagen*/
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        
+
+    .localização a {  /*mexe no link tira a linha que fica embaixo e aumenta a fonte*/
+        text-decoration : none;
+        font-size: 30px;
+    } 
+
+.texto{ /*-- deixa os textos ao lado das imagens*/
+   display: flex;
+    align-items         :center;
+    gap                 :20px;
+}
+
+ /* Aqui é o final da página*/
+
+
+
+    footer{
+
+ justify-content: center; /*Alinha os itens no centro do contêiner(Footer nesse caso)*/
+
+    display: flex;
+    flex-direction:row; 
+    gap: 103px;  /*espaço entre os itens*/
+
+
+    
+    }
+
+     .icone{
+         /* é igual ao que eu expliquei lá em cima*/
+        justify-content : space-between;
+        flex-direction: row;
+        align-items     : center;
+
+    height: 30px;  /* tamanho do icone*/
+    }
+
+    #logofim{
+
+
+         height: 140px; /* tamanho da logo*/
+    }
+ 
+ .fimpag{ /* mexe co os paragrafo no fim da pagina*/
+
+
+background-color: #F2BBC9;
+
+padding: 5px ;
+margin: 6px 26px 19px -21px;
+
+width: 145px;
+
+border-radius: 10px;
+ }
+ 
+
+
+
+   
+
+
+     
+        
+   
+
+/*--- aqui embaixo são as partes do carrosel ---*/
+
+    .carrosel{
+        margin          : 10px auto;
+        width           : 100%;
+        border          : 1px solid transparent;
+        display         : flex;
+        gap             : 1em;
+        overflow        : hidden;
+    }
+
+    .carrosel ::-webkit-scrollbar {
+        display         : none;
+/*  tira a barra de rolagem*/
+    }
+.grupo{
+
+display                 : flex;
+align-items             : center;
+justify-content         : center;
+gap                     : 1em;
+animation               : spin 9s infinite linear; /* é o responsavel pela animação de "girar do carrosel"*/
+
+
+}
+    .carta{ 
+        flex            : 0 0 100px; 
+        height          : 100px;
+        width           : 100px;
+        background      :rgb(255, 173, 240);
+        
+        border-radius   : .2em;
+        overflow        : hidden; /* controla o que acontece com o conteúdo que é grande demais para caber em uma área ,  HIDDEN O conteúdo excedente é cortado e o restante é ocultado..*/
+        text-align      : center;
+       
+        display         : flex;
+        align-items     : center;
+        justify-content : center;
+    
+    }
+    .carta img {
+        width           : 100%;
+    height              : 100%;
+    object-fit          : cover;  /* faz com que a imagem cubra todo o espaço da "carta"*/
+    display             : block;
+    
+    }
+
+    @keyframes spin {
+        from {translate : 0;}
+        to{translate    : -100%;}
+    }
+
+
+ /* --- aqui mexe com o tamanho do carrosel de acordo com o tamanho da tela---*/
+
+
+    /* --- PARA TABLETS (Telas a partir de 768px de largura) --- */
+@media (min-width       : 768px) {
+    .carta {
+        width           : 90px;
+        height          : 90px;
+        padding         : 30px;
+        font-size       : 1rem;
+    }
+}
+    /* --- PARA COMPUTADORES (Telas a partir de 1024px de largura) --- */
+@media (min-width       : 1024px) {
+    .carta {
+        width           : 120px;  /* Cartas maiores no monitor */
+        height          : 120px;
+        padding         : 40px;
+    }
+}
+
+
+
+
+
+     
+
+
+
+
+
+    
+
+
+    
+
